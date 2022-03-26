@@ -9,7 +9,7 @@ app.set("view engine", "ejs"); //name of view engine
 app.set("views", path.join(__dirname, "views")); //path of views
 app.use(express.urlencoded()); //signifies middleware
 
-// view mein HTML and Css
+
 app.use(express.urlencoded()); //signifies middleware
 app.use(express.json());
 app.use(express.static("assets"));
@@ -21,7 +21,7 @@ app.use((req, res, next) => {
   next();
 });
 
-var contactList = ["prateeksha.@gmail.com", "prateek@gmail.com"];
+var contactList = ["piyushpvns@gmail.com", "ranag@gmail.com"];
 
 app.get("/", function (req, res) {
   return res.render("home");
